@@ -23,7 +23,9 @@ var jokers = $("#jokers:checked").val();
 var thrones = $("#thrones:checked").val();
 
 
-
+if (noLight) {
+  $("#vampire").show();
+}
 if(light && purple && alien && coffee && office ){
 alert("JAVASCRIPT");
 

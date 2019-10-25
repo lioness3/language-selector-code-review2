@@ -13,7 +13,10 @@
 img {
   max-width:35%;
 }
-.jumbotron{
+h3 {
+  text-align: left;
+}
+input {
   text-align: center;
 }
 
