@@ -24,7 +24,7 @@ var thrones = $("#thrones:checked").val();
 
 
 if (noLight) {
-  $("#vampire").show();
+  $("#vampire").slideDown();
   $(".quiz").hide();
 }
 else if (money && coffee) {
@@ -39,6 +39,8 @@ else if (sunglasses && green || orange && alien || puzzle && martini || coffee |
 }else {
   alert("You might want to consider following instructions or choosing a different website to view!!!");
 }
+
+
 
 event.preventDefault();
 });
