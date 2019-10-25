@@ -11,10 +11,23 @@
 }
 
 img {
-
   max-width:35%;
+}
 
+.question1{
+  font-size: 20px
 
+}
 
+.question2{
+  font-size: 30px
 
+}
+
+.question4{
+  font-size: 20px
+}
+
+.question5{
+  font-size: 20px
 }

@@ -11,10 +11,12 @@
   <body>
     <div class="container">
       <h1>Take this short quiz to determine which language best suits your future career.</h1>
-      <form class="quiz" action="index.html" method="post">
-      <h3>Select ONE of the following options that resinate with you:</h3>
-      <label class="checkbox-inline">
 
+      <form class="quiz" action="index.html" method="post">
+
+      <div class="question1">
+        <h3>Select ONE of the following options that resinate with you:</h3>
+        <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1"> The sunshine is your friend.
         </label>
         <label class="checkbox-inline">
@@ -23,9 +25,11 @@
         <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox3" value="option3"> You have sunglasses. Bring it, light!
         </label>
-      <h3>Select ONE color you like the best:</h3>
-      <label class="checkbox-inline">
+      </div>
 
+      <div class="question2">
+        <h3>Select ONE color you like the best:</h3>
+        <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1"><span id="orange">Orange</span>
         </label>
         <label class="checkbox-inline">
@@ -34,9 +38,11 @@
         <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox3" value="option3"><span id="green">Green</span>
         </label>
-      <h3>Select ONE of the three images below.</h3>
-      <label class="checkbox-inline">
+      </div>
 
+      <div class="question3">
+        <h3>Select ONE of the three images below.</h3>
+        <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1"><img src="img/alien.jpg" alt="oops! something went wrong!">
         </label>
         <label class="checkbox-inline">
@@ -45,10 +51,11 @@
         <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox3" value="option3"><img src="img/puzzle.png" alt="oops! something went wrong!">
         </label>
-      <h3>Select ONE of the following drink options:</h3>
-      <label class="checkbox-inline">
+      </div>
 
-
+      <div class="question4">
+        <h3>Select ONE of the following drink options:</h3>
+        <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1">Dirty Martini
         </label>
         <label class="checkbox-inline">
@@ -57,16 +64,24 @@
         <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox3" value="option3">Arnold-Palmer Iced tea
         </label>
+      </div>
 
+      <div class="question5">
+        <h3>Select ONE of the following Televesion Shows that you like the most:</h3>
+        <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1">"The Office""
+        </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2">"Impractical Jokers"
+        </label>
+        <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3">"Game of Thrones"
+        </label>
+      </div>
 
+      <button type="button" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
 
-
-
-
-
-<button type="button" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
-
-</form>
+      </form>
     </div>
   </body>
 </html>
