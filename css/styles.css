@@ -9,6 +9,9 @@
 #green {
   color: green;
 }
+#vampire {
+  display: none;
+}
 
 img {
   max-width:35%;

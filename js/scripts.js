@@ -12,7 +12,7 @@ var green = $("#green3:checked").val();
 //question3
 var alien = $("#alien:checked").val();
 var money = $("#money:checked").val();
-var puzzle = $("#puzzle;checked").val();
+var puzzle = $("#puzzle:checked").val();
 //question4
 var martini = $("#martini:checked").val();
 var coffee = $("#coffee:checked").val();
@@ -25,12 +25,19 @@ var thrones = $("#thrones:checked").val();
 
 if (noLight) {
   $("#vampire").show();
+  $(".quiz").hide();
 }
-if(light && purple && alien && coffee && office ){
+else if (money && coffee) {
+  alert("'Python' best suits your future career.")
+}
+ else if (light && purple && alien && coffee && office ){
 alert("JAVASCRIPT");
+}
+else if (sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones) {
+  alert("'Ruby' best suits your future career.")
 
 }else {
-  alert("NO!");
+  alert("You might want to consider following instructions or choosing a different website to view!!!");
 }
 
 event.preventDefault();
