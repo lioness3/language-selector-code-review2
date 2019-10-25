@@ -1,9 +1,9 @@
 $(document).ready(function(){
-$().click();
-$().submit();
+
+$(".btn").submit(language);
 
 
-
+var 4 = .question4
 
 
 
