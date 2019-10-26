@@ -30,8 +30,8 @@ if (noLight) {
 else if (money && coffee) {
   alert("'Python' best suits your future career.")
 }
- else if (light && purple && alien && coffee && office ){
-alert("JAVASCRIPT");
+ else if (light && purple && alien && coffee && office || thrones ){
+alert("'JavaScript' is the best language for you!");
 }
 else if (sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones) {
   alert("'Ruby' best suits your future career.")
