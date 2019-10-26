@@ -33,7 +33,7 @@ else if (money && coffee) {
  else if (light && purple && alien && coffee && office || thrones ){
 alert("'JavaScript' is the best language for you!");
 }
-else if (sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones) {
+else if (sunglasses && green || orange && alien || puzzle && martini || coffee || tea || tea && office || thrones) {
   alert("'Ruby' best suits your future career.")
 
 }else {
