@@ -1,3 +1,5 @@
+
+}
 #orange {
   color: orange;
 }
@@ -11,12 +13,37 @@
 }
 #vampire {
   display: none;
-  color: #B01C1C;
+  color: white;
+  text-align: center;
+  /*background: url("../img/blood.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;*/
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+/*
+.vampireForm{*/
+  /* margin:100px; */
+/*}*/
+
+.vampirePic {
+height: 600px;
+width: 100%;
+}
+.vampireList >ul {
+  text-align: left;
+  display: inline-block;
+  list-style-type: none;
 }
 
-img {
-  max-width:35%;
+.shrinkimg {
+  max-width:40%;
 }
+
 h3 {
   text-align: left;
 }

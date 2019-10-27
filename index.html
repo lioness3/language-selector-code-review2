@@ -10,93 +10,98 @@
   <body>
     <div class="container">
       <h1 class="quiz">Take this short quiz to determine which language best suits your future career.</h1>
-
       <form class="quiz" action="index.html" method="post">
+        <div class="jumbotron question1">
+          <h3>Select ONE of the following options that resinate with you:</h3>
+          <label class="r-sun">
+          <input type="radio" id="light" value="option1" name="sun"> The sunshine is your friend.
+          </label>
+          <label class="r-sun">
+          <input type="radio" id="noLight" value="option2" name="sun"> You prefer no light...EVER!
+          </label>
+          <label class="r-sun">
+          <input type="radio" id="sunglasses" value="option3" name="sun"> You have sunglasses. Bring it, light!
+          </label>
+        </div>
 
-      <div class="jumbotron question1">
-        <h3>Select ONE of the following options that resinate with you:</h3>
-        <label class="r-sun">
-        <input type="radio" id="light" value="option1" name="sun"> The sunshine is your friend.
-        </label>
-        <label class="r-sun">
-        <input type="radio" id="noLight" value="option2" name="sun"> You prefer no light...EVER!
-        </label>
-        <label class="r-sun">
-        <input type="radio" id="sunglasses" value="option3" name="sun"> You have sunglasses. Bring it, light!
-        </label>
-      </div>
+        <div class="jumbotron question2">
+          <h3>Select ONE color you like the best:</h3>
+          <label class="r-colors">
+          <input type="radio" id="orange1" value="option1" name="colors"><span id="orange">Orange</span>
+          </label>
+          <label class="r-colors">
+          <input type="radio" id="purple2" value="option2" name="colors"><span id="purple">Purple</span>
+          </label>
+          <label class="r-colors">
+          <input type="radio" id="green3" value="option3" name="colors"><span id="green">Green</span>
+          </label>
+        </div>
 
-      <div class="jumbotron question2">
-        <h3>Select ONE color you like the best:</h3>
-        <label class="r-colors">
-        <input type="radio" id="orange1" value="option1" name="colors"><span id="orange">Orange</span>
-        </label>
-        <label class="r-colors">
-        <input type="radio" id="purple2" value="option2" name="colors"><span id="purple">Purple</span>
-        </label>
-        <label class="r-colors">
-        <input type="radio" id="green3" value="option3" name="colors"><span id="green">Green</span>
-        </label>
-      </div>
+        <div class="jumbotron question3">
+          <h3>Select ONE of the three images below.</h3>
+          <label class="r-images">
+          <input type="radio" id="alien" value="option1" name="images"><img class="shrinkimg" src="img/alien.jpg" alt="oops! something went wrong!">
+          </label>
+          <label class="r-images">
+          <input type="radio" id="money" value="option2" name="images"> <img class="shrinkimg" src="img/money.jpeg" alt="oops! something went wrong!">
+          </label>
+          <label class="r-images">
+          <input type="radio" id="puzzle" value="option3" name="images"><img class="shrinkimg" src="img/puzzle.png" alt="oops! something went wrong!">
+          </label>
+        </div>
 
-      <div class="jumbotron question3">
-        <h3>Select ONE of the three images below.</h3>
-        <label class="r-images">
-        <input type="radio" id="alien" value="option1" name="images"><img src="img/alien.jpg" alt="oops! something went wrong!">
-        </label>
-        <label class="r-images">
-        <input type="radio" id="money" value="option2" name="images"> <img src="img/money.jpeg" alt="oops! something went wrong!">
-        </label>
-        <label class="r-images">
-        <input type="radio" id="puzzle" value="option3" name="images"><img src="img/puzzle.png" alt="oops! something went wrong!">
-        </label>
-      </div>
+        <div class="jumbotron question4">
+          <h3>Select ONE of the following drink options:</h3>
+          <label class="r-drink">
+          <input type="radio" id="martini" value="option1" name ="drink" >Dirty Martini
+          </label>
+          <label class="r-drink">
+          <input type="radio" id="coffee" value="option2" name ="drink" >Coffee
+          </label>
+          <label class="r-drink">
+          <input type="radio" id="tea" value="option3" name ="drink" >Arnold-Palmer Iced tea
+          </label>
+        </div>
 
-      <div class="jumbotron question4">
-        <h3>Select ONE of the following drink options:</h3>
-        <label class="r-drink">
-        <input type="radio" id="martini" value="option1" name ="drink" >Dirty Martini
-        </label>
-        <label class="r-drink">
-        <input type="radio" id="coffee" value="option2" name ="drink" >Coffee
-        </label>
-        <label class="r-drink">
-        <input type="radio" id="tea" value="option3" name ="drink" >Arnold-Palmer Iced tea
-        </label>
-      </div>
+        <div class="jumbotron question5">
+          <h3>Select ONE of the following Televesion Shows that you like the most:</h3>
+          <label class="r-shows">
+          <input type="radio" id="office" value="option1" name="shows">"The Office"
+          </label>
+          <label class="r-shows">
+          <input type="radio" id="jokers" value="option2" name="shows">"Impractical Jokers"
+          </label>
+          <label class="r-shows">
+          <input type="radio" id="thrones" value="option3" name="shows">"Game of Thrones"
+          </label>
+        </div>
 
-      <div class="jumbotron question5">
-        <h3>Select ONE of the following Televesion Shows that you like the most:</h3>
-        <label class="r-shows">
-        <input type="radio" id="office" value="option1" name="shows">"The Office"
-        </label>
-        <label class="r-shows">
-        <input type="radio" id="jokers" value="option2" name="shows">"Impractical Jokers"
-        </label>
-        <label class="r-shows">
-        <input type="radio" id="thrones" value="option3" name="shows">"Game of Thrones"
-        </label>
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
-    </form>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
+      </form>
     </div>
+
     <div id = "vampire">
-       <h1>WARNING!</h1>
-       <br>
-       <h3>YOU MAY BE A VAMPIRE!</h3>
-       <img class ="vampirePic" src="img/vampire.jpeg" alt="oops! Something went wrong!">
-      <ul>
-        <h4>Please remain locked in a coffin if you experiance the following:</h4>
-        <li>You have no reflection when looking in the mirror.</li>
-        <li>You are repulsed by garlic</li>
-        <li>You are nocturnal</li>
-        <li>You crave human blood</li>
-        <li>Your spirit animal is a bat</li>
-      </ul>
-      <button id="btn-vampire" type="submit" class="btn btn-danger">RETURN</button>
+      <form class="vampireForm" action="index.html" method="post">
+         <h1><strong>WARNING!</strong></h1>
 
+         <h2>YOU MAY BE A VAMPIRE!</h2>
 
+         <img class ="vampirePic" src="img/vampire.jpeg" alt="oops! Something went wrong!">
+
+         <div class="vampireList">
+          <ul>
+            <h4><strong>Please remain locked in a coffin if you experiance the following:</strong></h4>
+            <br>
+            <li>You have no reflection when looking in the mirror.</li>
+            <li>You are repulsed by garlic</li>
+            <li>You are nocturnal</li>
+            <li>You crave human blood</li>
+            <li>Your spirit animal is a bat</li>
+          </ul>
+        </div>
+
+        <button id="btn-vampire" type="submit" class="btn btn-danger">Return with the love of sunshine</button>
+      </form>
     </div>
   </body>
 </html>
