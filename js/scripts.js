@@ -1,6 +1,7 @@
 $(document).ready(function() {
-
   $(".quiz").submit(function(event){
+
+    event.preventDefault();
 //question1
     var light = $("#light:checked").val();
     var noLight = $("#noLight:checked").val();
@@ -22,30 +23,36 @@ $(document).ready(function() {
     var jokers = $("#jokers:checked").val();
     var thrones = $("#thrones:checked").val();
 //directs webpage what to alert user.
-    if (noLight) {
-      $("#vampire").slideDown();
-      $(".quiz").hide();
-    }
-    else if (money && coffee) {
-      alert("'Python' best suits your future career.");
-    }
-     else if (light && purple && alien && coffee && office || thrones ){
-    alert("'JavaScript' is the best language for you!");
-    }
-    else if (light || sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones || jokers) {
-      alert("'Ruby' best suits your future career.")
-    }else {
-      alert("You might want to consider following instructions or choosing a different website to view!!!");
-    }
-    event.preventDefault();
-  });
-  //redirects user from vampire page to the quiz.
-  $(".vampireForm").submit(function(event) {
-    window.history.back();
-    event.preventDefault();
-  });
-});
+    // var python = $("#hiddenPython").show();
+    // var javaScript = $("#hiddenJavascript").show();
+    // var ruby = $("#hiddenRuby").show();
+    // var hideQuiz = $(".quiz").hide();
 
-function goBack() {
-  window.history.back();
-};
+    $(".quiz").toggle();
+    $('body').removeClass();
+
+      if (noLight) {
+        $("#vampire").slideDown();
+      }
+      else if (money && coffee) {
+        $("#hiddenPython").fadeToggle();
+        $('body').addClass('python');
+      }
+      else if (light && purple && alien && coffee && office || thrones ){
+        $("#hiddenJavascript").fadeToggle();
+        $('body').addClass('javascript');
+      }
+      else if (light || sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones || jokers) {
+        $("#hiddenRuby").fadeToggle();
+        $('body').addClass('ruby');
+      }else {
+        alert("You might want to consider following instructions or choosing a different website to view!!!");
+        $('body').addClass('followDirections');
+      };
+    });
+
+    $('button.btn-return').on('click', function() {
+      $('#resultsContainer > div').hide();
+      $(".quiz").toggle();
+    });
+  });

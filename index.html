@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="quiz">Take this short quiz to determine which language best suits your future career.</h1>
       <form class="quiz" action="index.html" method="post">
+        <h1>Take this short quiz to determine which language best suits your future career.</h1>
         <div class="jumbotron question1">
           <h3>Select ONE of the following options that resinate with you:</h3>
           <label class="r-sun">
@@ -76,32 +76,47 @@
           </label>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
+        <button id = "quizBtn" type="submit" class="btn btn-primary btn-lg btn-block">FIND OUT YOUR RESULTS HERE!</button>
       </form>
     </div>
 
-    <div id = "vampire">
-      <form class="vampireForm" action="index.html" method="post">
-         <h1><strong>WARNING!</strong></h1>
+    <div id="resultsContainer">
+      <div id = "vampire">
+        <form class="vampireForm" action="index.html" method="post">
+           <h1><strong>WARNING!</strong></h1>
 
-         <h2>YOU MAY BE A VAMPIRE!</h2>
+           <h2>YOU MAY BE A VAMPIRE!</h2>
 
-         <img class ="vampirePic" src="img/vampire.jpeg" alt="oops! Something went wrong!">
+           <img class ="vampirePic" src="img/vampire.jpeg" alt="oops! Something went wrong!">
 
-         <div class="vampireList">
-          <ul>
-            <h4><strong>Please remain locked in a coffin if you experience the following:</strong></h4>
-            <br>
-            <li>You have no reflection when looking in the mirror.</li>
-            <li>You are repulsed by garlic</li>
-            <li>You are nocturnal</li>
-            <li>You crave human blood</li>
-            <li>Your spirit animal is a bat</li>
-          </ul>
-        </div>
+           <div class="vampireList">
+            <ul>
+              <h4><strong>Please remain locked in a coffin if you experience the following:</strong></h4>
+              <br>
+              <li>You have no reflection when looking in the mirror.</li>
+              <li>You are repulsed by garlic</li>
+              <li>You are nocturnal</li>
+              <li>You crave human blood</li>
+              <li>Your spirit animal is a bat</li>
+            </ul>
+          </div>
 
-        <button id="btn-vampire" type="submit" class="btn btn-danger">Return with the love of sunshine</button>
-      </form>
+          <button id="btn-vampire" type="submit" class="btn btn-danger">Return with the love of sunshine</button>
+        </form>
+      </div>
+      <!-- // hidden div for quiz results -->
+      <div id="hiddenPython">
+        <p>Based on your results, Python is your recommended language.</p>
+        <button type="submit" class="btn btn-return">Return to the form!</button>
+      </div>
+      <div id="hiddenJavascript">
+        <h1>Based on your results, Javascript is your suggested language.</h1>
+        <button type="submit" class="btn btn-return">Return to the form!</button>
+      </div>
+      <div id="hiddenRuby">
+        <h1>Based on your resukts, we recoomend you try the language Ruby!</h1>
+        <button type="submit" class="btn btn-return">Return to the form!</button>
+      </div>
     </div>
   </body>
 </html>
