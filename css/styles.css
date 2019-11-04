@@ -29,9 +29,9 @@
 }
 
 .vampirePic {
-height: 400px;
-width: 600px;
-border: solid #FAFA12;
+  height: 400px;
+  width: 600px;
+  border: solid #FAFA12;
 }
 .vampireList >ul {
   text-align: left;
@@ -65,22 +65,23 @@ input {
 .question2{
   font-size: 30px
 }
-
 #hiddenRuby,
 #hiddenPython,
 #hiddenJavascript {
   display: none;
 }
+.quiz{
+  background-color: purple;
+}
 
-
-body.ruby{
+body.python{
   background-color: navy;
   color: white;
 }
 
 body.javascript{
-background-color: yellow;
-color: purple;
+  background-color: yellow;
+  color: purple;
 }
 
 body.ruby{

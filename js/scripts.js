@@ -22,37 +22,32 @@ $(document).ready(function() {
     var office = $("#office:checked").val();
     var jokers = $("#jokers:checked").val();
     var thrones = $("#thrones:checked").val();
-//directs webpage what to alert user.
-    // var python = $("#hiddenPython").show();
-    // var javaScript = $("#hiddenJavascript").show();
-    // var ruby = $("#hiddenRuby").show();
-    // var hideQuiz = $(".quiz").hide();
 
     $(".quiz").toggle();
-    $('body').removeClass();
+    $("body").removeClass();
 
       if (noLight) {
         $("#vampire").slideDown();
       }
       else if (money && coffee) {
         $("#hiddenPython").fadeToggle();
-        $('body').addClass('python');
+        $("body").addClass("python");
       }
       else if (light && purple && alien && coffee && office || thrones ){
         $("#hiddenJavascript").fadeToggle();
-        $('body').addClass('javascript');
+        $("body").addClass("javascript");
       }
       else if (light || sunglasses && green || orange && alien || puzzle && martini || coffee || tea && office || thrones || jokers) {
         $("#hiddenRuby").fadeToggle();
-        $('body').addClass('ruby');
+        $("body").addClass("ruby");
       }else {
         alert("You might want to consider following instructions or choosing a different website to view!!!");
-        $('body').addClass('followDirections');
+        $(".quiz").show("quiz")
       };
     });
 
-    $('button.btn-return').on('click', function() {
-      $('#resultsContainer > div').hide();
+    $('button.btn-return').on("click", function() {
+      $("#resultsContainer > div").hide();
       $(".quiz").toggle();
     });
   });
